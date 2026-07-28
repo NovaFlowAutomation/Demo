@@ -115,6 +115,29 @@ prevents double bookings, and sends confirmation emails automatically.
 © 2026 NovaFlow Automation
 
 </footer>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
+<script type="module">
+import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+createChat({
+  webhookUrl: "https://novaflowautomation.app.n8n.cloud/webhook/f2c548d3-9d92-4c15-b86a-9d8fa2263f31/chat",
+  mode: "window",
+  showWelcomeScreen: true,
+  initialMessages: [
+    "Hi! I'm Nathan 👋",
+    "I'm NovaFlow's AI receptionist. How can I help you today?"
+  ],
+  i18n: {
+    en: {
+      title: "Nathan",
+      subtitle: "NovaFlow AI Receptionist",
+      footer: "",
+      getStarted: "Start Chat",
+      inputPlaceholder: "Type your message..."
+    }
+  }
+});
+</script>
 </body>
 </html>
